@@ -2,11 +2,12 @@
 
 Organize speech transcriptions into separate files by speaker
 
+Requires Python 3.2 or higher
+
 
 ## Usage
 
-` speech_buckets.py [-o OUTPUT_DIRECTORY] [-p OUTPUT_PREFIX] FILES
-`
+` speech_buckets.py [-o OUTPUT_DIRECTORY] [-p OUTPUT_PREFIX] FILES`
 
 
 ### positional arguments:

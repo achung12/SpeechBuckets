@@ -79,7 +79,7 @@ def parse_transcription_line(line):
 
 
 class TranscriptionParser:
-    def __init__(self, target, output_dir=None, output_prefix=''):
+    def __init__(self, target, output_dir=None, output_prefix=DEFAULT_OUTPUT_PREFIX):
         self.files_processed = 0
         self.files_created = 0
 
@@ -176,7 +176,8 @@ if __name__ == '__main__':
     import argparse
 
     arg_parser = argparse.ArgumentParser(
-        description='Organize speech transcriptions into separate files by speaker',
+        description='Organize speech transcriptions into separate files by speaker\n'
+                    'Requires Python 3.2 or higher',
         formatter_class=argparse.RawTextHelpFormatter,
     )
     arg_parser.add_argument(
